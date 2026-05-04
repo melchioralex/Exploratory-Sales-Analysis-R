@@ -10,24 +10,6 @@ Utilizar uma base de dados hipotética (vendas) para realizar o ciclo completo d
 3. **Agrupamento Estatístico:** Sumarizar lucros por categoria e calcular o ticket médio por canal de venda.
 4. **Análise Visual:** Identificar padrões e outliers através de histogramas e boxplots.
 
-## 🛠️ Lógica Aplicada (Pseudocódigo)
-
-Abaixo está a representação detalhada da lógica utilizada no script:
-
-```text
-// 1. Preparação e Amostragem
-LER arquivo CSV -> DEFINIR semente (202641) -> GERAR amostra de 200 registros.
-
-// 2. Transformação de Variáveis
-venda_liquida = (preco * (1 - desconto)) * quantidade
-lucro_total = venda_liquida - custo_unitario
-
-// 3. Manipulação e Estatística
-FILTRAR 'SP' -> CALCULAR Medidas Centrais.
-AGRUPAR por Categoria e Canal -> SUMARIZAR Lucro e Ticket Médio.
-
-// 4. Visualização
-PLOTAR Histogramas, Boxplots e Dispersão.
 
 # 📈 Conclusões e Insights Analíticos
 
@@ -70,6 +52,26 @@ O modelo de negócio é caracterizado por uma **cauda longa à direita**. Aproxi
 A análise de dispersão revelou que o percentual de desconto **não possui correlação direta** com a quantidade de itens por pedido.
 * **Insight:** A demanda mostra-se **inelástica** em relação ao preço promocional no curto prazo. 
 * **Risco:** Descontos agressivos podem estar apenas "canibalizando" a margem de lucro, sem gerar o aumento esperado no volume de vendas.
+
+
+## 🛠️ Lógica Aplicada (Pseudocódigo)
+
+Abaixo está a representação detalhada da lógica utilizada no script:
+
+```text
+// 1. Preparação e Amostragem
+LER arquivo CSV -> DEFINIR semente (202641) -> GERAR amostra de 200 registros.
+
+// 2. Transformação de Variáveis
+venda_liquida = (preco * (1 - desconto)) * quantidade
+lucro_total = venda_liquida - custo_unitario
+
+// 3. Manipulação e Estatística
+FILTRAR 'SP' -> CALCULAR Medidas Centrais.
+AGRUPAR por Categoria e Canal -> SUMARIZAR Lucro e Ticket Médio.
+
+// 4. Visualização
+PLOTAR Histogramas, Boxplots e Dispersão.
 
 
 ## 🧰 Tecnologias Utilizadas
