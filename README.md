@@ -37,6 +37,7 @@ A média supera consideravelmente a mediana, e o **desvio padrão elevado** (sup
 
 ### 📊 Distribuição de Vendas (Histograma)
 O modelo de negócio é caracterizado por uma **cauda longa à direita**. Aproximadamente **60% das vendas** concentram-se em valores abaixo de R$ 5.000,00, evidenciando que o volume de transações de menor valor sustenta o fluxo de caixa.
+![Histograma da Distribuição de Vendas](Histograma_venda_liquida.png)
 
 ### 📦 Variabilidade por Categoria (Boxplot)
 * **Informática:** Apresenta a maior variabilidade de preços do catálogo.
