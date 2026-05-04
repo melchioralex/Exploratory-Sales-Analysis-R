@@ -43,17 +43,19 @@ O modelo de negócio é caracterizado por uma **cauda longa à direita**. Aproxi
 * **Informática:** Apresenta a maior variabilidade de preços do catálogo.
 * **Acessórios:** Baixa variabilidade, com vendas concentradas em valores baixos e constantes.
 * **Eletrônicos & Eletrodomésticos:** Exibem *outliers* significativos, representando a venda de produtos de nicho *premium*.
+![Boxplot por categoria](boxplot_venda_liquida_por_categoria.png)
 
 ### 🗺️ Análise Geográfica
 * **Liderança:** O estado do **Paraná** lidera o volume de vendas, seguido por Pernambuco e Bahia.
 * **Oportunidade/Gargalo:** Surpreendentemente, **São Paulo e Rio de Janeiro** apresentam os menores índices de transações. 
 * *Ação:* Investigar possíveis problemas logísticos, custos de frete ou forte concorrência regional nestes mercados específicos.
+![Histograma de vendas por estado](histograma_vendas_por_estado.png)
 
 ### 💸 Elasticidade de Desconto (Dispersão)
 A análise de dispersão revelou que o percentual de desconto **não possui correlação direta** com a quantidade de itens por pedido.
 * **Insight:** A demanda mostra-se **inelástica** em relação ao preço promocional no curto prazo. 
 * **Risco:** Descontos agressivos podem estar apenas "canibalizando" a margem de lucro, sem gerar o aumento esperado no volume de vendas.
-
+![Grafico de disperção entre descontos e quantidade de vendas](dispercao_desconto_qtde_vendas.png)
 
 ## 🧰 Tecnologias Utilizadas
 
