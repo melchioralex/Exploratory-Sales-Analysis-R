@@ -51,12 +51,10 @@ CRIAR Gráfico de Barras (contagem de vendas por estado)
     ORDENAR barras por frequência (fct_infreq)
 GERAR Gráfico de Dispersão (percentual_desconto vs quantidade)
 
-🧰 Tecnologias Utilizadas
+## 🧰 Tecnologias Utilizadas
 
-Linguagem: R
+* **Linguagem:** R
+* **Bibliotecas:** `tidyverse` (dplyr, ggplot2, forcats)
 
-Bibliotecas:
-
-tidyverse (dplyr, ggplot2, forcats)
-
-Nota: Os dados utilizados neste exercício são hipotéticos, gerados por IA para fins didáticos.
+---
+*Nota: Os dados utilizados neste exercício são hipotéticos, gerados por IA para fins didáticos.*
