@@ -54,6 +54,14 @@ A análise de dispersão revelou que o percentual de desconto **não possui corr
 * **Risco:** Descontos agressivos podem estar apenas "canibalizando" a margem de lucro, sem gerar o aumento esperado no volume de vendas.
 
 
+## 🧰 Tecnologias Utilizadas
+
+* **Linguagem:** R
+* **Bibliotecas:** `tidyverse` (dplyr, ggplot2, forcats)
+
+---
+*Nota: Os dados utilizados neste exercício são hipotéticos, gerados por IA para fins didáticos.*
+
 ## 🛠️ Lógica Aplicada (Pseudocódigo)
 
 Abaixo está a representação detalhada da lógica utilizada no script:
@@ -72,12 +80,3 @@ AGRUPAR por Categoria e Canal -> SUMARIZAR Lucro e Ticket Médio.
 
 // 4. Visualização
 PLOTAR Histogramas, Boxplots e Dispersão.
-
-
-## 🧰 Tecnologias Utilizadas
-
-* **Linguagem:** R
-* **Bibliotecas:** `tidyverse` (dplyr, ggplot2, forcats)
-
----
-*Nota: Os dados utilizados neste exercício são hipotéticos, gerados por IA para fins didáticos.*
