@@ -13,43 +13,21 @@ Utilizar uma base de dados hipotética (vendas) para realizar o ciclo completo d
 ## 🛠️ Lógica Aplicada (Pseudocódigo)
 
 Abaixo está a representação detalhada da lógica utilizada no script:
+
 ```text
-ÍNDICE
-
 // 1. Preparação e Amostragem
-LER arquivo CSV via seleção manual (file.choose)
-ANEXAR dataframe à memória (attach)
-EXIBIR estrutura e dimensões (head, dim, str)
+LER arquivo CSV -> DEFINIR semente (202641) -> GERAR amostra de 200 registros.
 
-DEFINIR semente aleatória (202641)
-GERAR vetor de sorteio (200 números entre 1 e 1000 com reposição)
-CRIAR novo dataframe 'dad41' baseado no sorteio
-EXPORTAR 'dad41' para novo arquivo CSV
+// 2. Transformação de Variáveis
+venda_liquida = (preco * (1 - desconto)) * quantidade
+lucro_total = venda_liquida - custo_unitario
 
-// 2. Transformação de Variáveis (Feature Engineering)
-CALCULAR venda_liquida:
-    (preco_unitario_base * (1 - percentual_desconto)) * quantidade
-CALCULAR lucro_total:
-    (venda_liquida - custo_unitario)
+// 3. Manipulação e Estatística
+FILTRAR 'SP' -> CALCULAR Medidas Centrais.
+AGRUPAR por Categoria e Canal -> SUMARIZAR Lucro e Ticket Médio.
 
-// 3. Manipulação com Tidyverse e Estatística
-FILTRAR dados onde estado_cliente é igual a 'SP'
-CALCULAR média, mediana e desvio padrão da venda_liquida
-
-AGRUPAR por categoria:
-    CALCULAR soma do lucro_total (removendo valores nulos)
-    ORDENAR por lucro de forma decrescente
-
-AGRUPAR por canal_venda:
-    CALCULAR média do ticket (preco_base * quantidade)
-    ORDENAR por ticket de forma decrescente
-
-// 4. Visualização de Dados
-GERAR Histograma da venda_liquida
-CRIAR Boxplot (venda_liquida vs categoria) com tema minimalista
-CRIAR Gráfico de Barras (contagem de vendas por estado)
-    ORDENAR barras por frequência (fct_infreq)
-GERAR Gráfico de Dispersão (percentual_desconto vs quantidade)
+// 4. Visualização
+PLOTAR Histogramas, Boxplots e Dispersão.
 
 # 📈 Conclusões e Insights Analíticos
 
