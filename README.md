@@ -51,6 +51,49 @@ CRIAR Gráfico de Barras (contagem de vendas por estado)
     ORDENAR barras por frequência (fct_infreq)
 GERAR Gráfico de Dispersão (percentual_desconto vs quantidade)
 
+# 📈 Conclusões e Insights Analíticos
+
+## 1. Medidas de Tendência Central e Dispersão
+A análise estatística revelou uma **assimetria positiva** acentuada no conjunto de dados:
+* **Média:** $\approx$ R$ 4,6k
+* **Mediana:** $\approx$ R$ 2,8k
+
+A média supera consideravelmente a mediana, e o **desvio padrão elevado** (superior à própria média) confirma uma base de dados heterogênea. Isso indica que, embora 50% das transações ocorram abaixo de **R$ 2.832,69**, a presença de valores atípicos (*outliers*) eleva artificialmente o faturamento médio.
+
+> **💡 Estratégia de Tratamento de Outliers:** > Para mitigar a variabilidade em bases de vendas assíncronas, recomenda-se a análise do **Intervalo Interquartil (IQR)**. Estratégias como a **Winsorização** (para preservar o tamanho da amostra) ou **Transformação Logarítmica** são sugeridas para reduzir a dispersão sem descartar dados reais de vendas premium.
+
+---
+
+## 2. Performance por Categoria e Canal
+
+| Indicador | Descoberta Principal | Recomendação Estratégica |
+| :--- | :--- | :--- |
+| **Lucro Acumulado** | **Eletrônicos** lidera com > R$ 303k; **Acessórios** tem contribuição marginal. | Revisar o portfólio de Acessórios para identificar se o problema é margem baixa ou baixo giro. |
+| **Ticket Médio** | **Loja Física** detém o maior valor ($\approx$ R$ 5,8k). Canais digitais estabilizam em R$ 5,1k. | Fomentar o *upselling* no digital e manter o foco em produtos de alto valor na experiência presencial. |
+
+---
+
+## 3. Visualização de Dados e Comportamento de Mercado
+
+### 📊 Distribuição de Vendas (Histograma)
+O modelo de negócio é caracterizado por uma **cauda longa à direita**. Aproximadamente **60% das vendas** concentram-se em valores abaixo de R$ 5.000,00, evidenciando que o volume de transações de menor valor sustenta o fluxo de caixa.
+
+### 📦 Variabilidade por Categoria (Boxplot)
+* **Informática:** Apresenta a maior variabilidade de preços do catálogo.
+* **Acessórios:** Baixa variabilidade, com vendas concentradas em valores baixos e constantes.
+* **Eletrônicos & Eletrodomésticos:** Exibem *outliers* significativos, representando a venda de produtos de nicho *premium*.
+
+### 🗺️ Análise Geográfica
+* **Liderança:** O estado do **Paraná** lidera o volume de vendas, seguido por Pernambuco e Bahia.
+* **Oportunidade/Gargalo:** Surpreendentemente, **São Paulo e Rio de Janeiro** apresentam os menores índices de transações. 
+* *Ação:* Investigar possíveis problemas logísticos, custos de frete ou forte concorrência regional nestes mercados específicos.
+
+### 💸 Elasticidade de Desconto (Dispersão)
+A análise de dispersão revelou que o percentual de desconto **não possui correlação direta** com a quantidade de itens por pedido.
+* **Insight:** A demanda mostra-se **inelástica** em relação ao preço promocional no curto prazo. 
+* **Risco:** Descontos agressivos podem estar apenas "canibalizando" a margem de lucro, sem gerar o aumento esperado no volume de vendas.
+
+
 ## 🧰 Tecnologias Utilizadas
 
 * **Linguagem:** R
